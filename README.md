@@ -71,7 +71,7 @@ As the game drags on, the importance of maintaining a high creep score becomes l
 Normally, people talk about a "gap" between regions, saying that the LPL (China's League) and the LCK (Korea's league) are light years ahead of their competition. Thus, I created a pivot table that showed the relationship of kills by each league based on position.
 
 |    CBLOL |    CBLOL |      LCK |      LCS |      LEC |      LJL |      LLA |      LPL |      PCS |      VCS |
-|position-:|---------:|---------:|---------:|---------:|---------:|---------:|---------:|---------:|---------:|
+|---------:|---------:|---------:|---------:|---------:|---------:|---------:|---------:|---------:|---------:|
 |      bot | 4.58471  | 3.75565  | 4.13447  | 4.32578  | 4.28488  | 4.52604  | 4.13311  | 4.25427  | 4.72492  |
 |      jng | 2.18802  | 2.01643  | 2.21402  | 2.51568  | 2.0407   | 2.53906  | 2.40066  | 2.29522  | 2.46926  |
 |      mid | 3.21281  | 2.70739  | 3.34848  | 3.57666  | 3.4031   | 3.55208  | 3.3      | 3.35495  | 3.18932  |
