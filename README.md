@@ -144,3 +144,13 @@ With a significance level of 0.05, the resulting p-value of 0.0 is far from it. 
 This is the difference between mid KDA subtracted by bot KDA. Because the value returned from the observed statistic is very small, it is safe to assume that, in our observed stat, the ADC does better than the mid player, boasting a .43 higher KDA on average.
 
 Based on the permutated data, this value is significantly significant because the p-value is incredibly low with no simulated datasets being more extreme than the observed test statistic, showing that we can safely reject the null hypothesis. ADC players do carry better than mid laners. In this case, carry is defined as having a higher KDA.
+
+
+
+| U.S._STATE   | NERC.REGION   |   ANOMALY.LEVEL | CAUSE.CATEGORY     | CAUSE.CATEGORY.DETAIL   |   OUTAGE.DURATION | WECC   |
+|:-------------|:--------------|----------------:|:-------------------|:------------------------|------------------:|:-------|
+| Minnesota    | MRO           |            -0.3 | severe weather     | nan                     |              3060 | False  |
+| Minnesota    | MRO           |            -0.1 | intentional attack | vandalism               |                 1 | False  |
+| Minnesota    | MRO           |            -1.5 | severe weather     | heavy wind              |              3000 | False  |
+| Minnesota    | MRO           |            -0.1 | severe weather     | thunderstorm            |              2550 | False  |
+| Minnesota    | MRO           |             1.2 | severe weather     | nan                     |              1740 | False  |
