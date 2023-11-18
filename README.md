@@ -21,20 +21,7 @@ The next step was to work only with the big leagues as listed by the League of L
 
 Finally, to deal with a small error of different data types, I converted a few columns giving me trouble to strings to ensure that they behaved properly.
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
