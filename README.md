@@ -174,3 +174,11 @@ Finally, to deal with a small error of different data types, I converted a few c
 </table>
 <p>5 rows × 32 columns</p>
 </div>
+
+
+One of the most important stages of games is the draft where teams can pick and ban champions. While trivial at first, it quickly becomes a complex chess match. Certain champion bans lock teams into playing certain styles and push players out of their comfort zones. Even if a team is "less mechanically skilled," they can still gain an edge in a match by simply banning and picking characters away. 
+
+However, there are certain champions that give a clear edge over others in terms of being selected. Thus, they are normally permanently banned.
+
+The following code creates a new dataframe that concatenates all the bans together by team (as to not quintuple count all banned values) before counting them all together and plotting it in a univariate bar chart.
+
