@@ -14,6 +14,8 @@ All the data was sourced from a public dataset created by Oracle's Elixer found 
 ### Introduction
 This dataset holds a multitude of information regarding the 2023 professional League of Legends scene, holding much data from professional matches and how each match developed in gold differential, minion kills, victories, teams, and players. Each row also has access to a variety of statistics for each individual player, all ready for analysis.
 
+As a bad League of Legends player myself, I fail to understand anything other than pointing my mouse at the enemy and running it down mid. However, objectives and map control are lost on me--I fail to see how they are more important than trying to kill the enemy. Thus, to become a better player, I felt the need to understand the game itself from the statistics gathered by the best players in the world. This analysis is a deep dive to just a few of the additional points of the game that makes League complex.
+
 This dataset initially came with 129,048 rows and 93 columns.
 
 Some of the important columns were
@@ -37,6 +39,10 @@ Some of the important columns were
 -assists: The number of assists a player gets in one match.
 
 -cspm: The number of minion kills per minute a player reached in one match.
+
+-dragons: The number of dragons the team that the player belongs to slays.
+
+-opp_dragons: The number of dragons the enemy team slays.
 
 
 ### Cleaning and EDA
