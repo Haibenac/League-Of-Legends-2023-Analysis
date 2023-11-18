@@ -17,16 +17,27 @@ This dataset holds a multitude of information regarding the 2023 professional Le
 This dataset initially came with 129,048 rows and 93 columns.
 
 Some of the important columns were
+
 -League: Determined with region the match was played in.
+
 -Side: Gave information on what side of the map the team played on.
+
 -Position: Informed whether or no the statistic belonged to a certain role or the team as a whole.
+
 -Champion: The character a given player played during that match.
+
 -bans 1-5: All bans that a team made through one match.
+
 -game length: The length of the game in seconds.
+
 -kills: The number of kills a player gets in one match.
+
 -deaths: The number of deaths a player gets in one match.
+
 -assists: The number of assists a player gets in one match.
+
 -cspm: The number of minion kills per minute a player reached in one match.
+
 
 ### Cleaning and EDA
 
