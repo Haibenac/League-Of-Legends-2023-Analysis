@@ -10,12 +10,29 @@ All the data was sourced from a public dataset created by Oracle's Elixer found 
 **Name(s)**: Andrew Peng
 
 **Website Link**: https://haibenac.github.io/League-Of-Legends-2023-Analysis/
+---
+### Introduction
+This dataset holds a multitude of information regarding the 2023 professional League of Legends scene, holding much data from professional matches and how each match developed in gold differential, minion kills, victories, teams, and players. Each row also has access to a variety of statistics for each individual player, all ready for analysis.
+
+This dataset initially came with 129,048 rows and 93 columns.
+
+Some of the important columns were
+-League: Determined with region the match was played in.
+-Side: Gave information on what side of the map the team played on.
+-Position: Informed whether or no the statistic belonged to a certain role or the team as a whole.
+-Champion: The character a given player played during that match.
+-bans 1-5: All bans that a team made through one match.
+-game length: The length of the game in seconds.
+-kills: The number of kills a player gets in one match.
+-deaths: The number of deaths a player gets in one match.
+-assists: The number of assists a player gets in one match.
+-cspm: The number of minion kills per minute a player reached in one match.
 
 ### Cleaning and EDA
 
 I begin by cleaning the data. I first decide which columns should be boolean values. I did this by sifting through the data and finding columns that could be determined by trues and falses. 
 
-Afterwards, I removed all columns that I knew I would not be using as it simply cluttered the data and made it harder to read.
+Afterward, I removed all columns that I knew I would not be using as it simply cluttered the data and made it harder to read.
 
 The next step was to work only with the big leagues as listed by the League of Legends Wikipedia. This included Brazil, Europe, North America, Japan, Korea, Latin America, China, Vietnam, and the two major international tournaments: The Mid-Season Invitational and Worlds.
 
@@ -82,6 +99,7 @@ Interestingly enough, the smaller regions (CBLOL, LLA, VCS) have a much higher a
 
 Interestingly enough, supports in the "weaker regions" tended to have higher kills on average, perhaps indicating lost gold that could've gone to the ADC.
 
+---
 ### Assessment of Missingness
 
 In the dataset under analysis, there are no columns categorized as NMAR, as the data originates from structured and regulated esports matches overseen by RIOT Games. Unlike survey data, where respondents decide whether to answer specific questions, esports match data is inherently complete in terms of player participation.
@@ -121,6 +139,7 @@ The Alternative Hypothesis: "Monsterkillsownjungle" is MAR and is associated wit
 
 With a significantly large p-value of 1.0, we fail to reject the null. Monster kills in a team's own jungle is MCAR when comparing it to the side (blue or red) column.
 
+---
 ### Hypothesis Testing
 
 For my hypothesis, I wanted to see Which role “carried” (does the best) in their team more often: ADCs (Bot lanes) or Mid laners? To determine this, I decided that success and "carrying" would be determined by whichever role had the highest KDA ((kills + assists) / deaths). The higher the number, the more impactful they were, and the higher the share of teamfights that specific role impacted. To do this, I first filtered my dataframe to create a new row (kda) where every player that had the role 'mid' or 'bot' had a new 'kda' statistic. Then, I pushed the mean of the KDAs of both roles and took a .diff() using 'Mid' - 'ADC.' Finally, using my observation, I compared it to a 10,000 permutation test of randomized Mid and ADC KDAs and compared the observed value to the difference of the means of the simulated statistics. 
