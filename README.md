@@ -182,3 +182,28 @@ However, there are certain champions that give a clear edge over others in terms
 
 The following code creates a new dataframe that concatenates all the bans together by team (as to not quintuple count all banned values) before counting them all together and plotting it in a univariate bar chart.
 
+<bound method BaseFigure.write_html of Figure({
+    'data': [{'alignmentgroup': 'True',
+              'hovertemplate': 'Champion=%{x}<br>Number of Bans=%{y}<extra></extra>',
+              'legendgroup': '',
+              'marker': {'color': '#636efa', 'pattern': {'shape': ''}},
+              'name': '',
+              'offsetgroup': '',
+              'orientation': 'v',
+              'showlegend': False,
+              'textposition': 'auto',
+              'type': 'bar',
+              'x': array(['Vi', 'Maokai', 'LeBlanc', 'Jayce', 'Jax', 'Sejuani', 'Neeko', 'Annie',
+                          'Ashe', 'Tristana', 'Renekton', 'Lucian', 'Elise', 'Rakan', 'Varus',
+                          'Caitlyn', 'Xayah', 'Zeri', 'Poppy', "K'Sante"], dtype=object),
+              'xaxis': 'x',
+              'y': array([1267, 1248, 1165, 1123, 1057, 1043, 911, 900, 888, 860, 827, 786, 773,
+                          772, 725, 682, 682, 673, 635, 626], dtype=object),
+              'yaxis': 'y'}],
+    'layout': {'barmode': 'relative',
+               'legend': {'tracegroupgap': 0},
+               'template': '...',
+               'title': {'text': 'Top 20 Most Banned Champions'},
+               'xaxis': {'anchor': 'y', 'domain': [0.0, 1.0], 'tickangle': 45, 'title': {'text': 'Champion'}},
+               'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0], 'title': {'text': 'Number of Bans'}}}
+})>
