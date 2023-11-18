@@ -44,7 +44,7 @@ Some of the important columns were
 
 -opp_dragons: The number of dragons the enemy team slays.
 
-
+---
 ### Cleaning and EDA
 
 I begin by cleaning the data. I first decide which columns should be boolean values. I did this by sifting through the data and finding columns that could be determined by trues and falses. 
